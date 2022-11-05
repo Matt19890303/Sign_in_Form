@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --color: #e6007e;
+    --txt: rgb(185, 185, 185)
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+}
+
+.image-container {
+    background: url(images/Mjölnir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+ }
+
+/* Banner over image */
+
+ /* Position text in the middle of the page/image */
+ .banner {
+   /* Fallback color */
+   background-color: rgb(0,0,0);
+   /* Black w/opacity/see-through */
+   background-color: rgba(0,0,0, 0.4); 
+   font-weight: bold;
+   /* border: 3px solid #f1f1f1; */
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+ }
+
+ .logo img {
+   max-width: 100px;
+   height: auto;
+   /* inverts the colour */
+   -webkit-filter: invert(100%);
+ }
+
+ .sign-up {
+   color: white;
+ }
+ 
+ .form-container {
+    width: 60%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    background-color: black;
+ }
+
+ .inner-container {
+    /* border: solid red; */
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+ } 
+
+ .inner-container form {
+   background-color: rgb(12, 12, 12);
+   padding: 50px;
+   box-shadow: 0 10px 20px -6px #f8bc5a;
+ }
+
+ .user-input {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ input {
+   width: 42%;
+   margin: 5px 5px 5px 0;
+   padding: 2px;
+   color: black;
+   font-size: 16px;
+   /* background-color: black; */
+ }
+
+.intro-text {
+   max-width: 900px;
+   padding-top: 150px;
+   padding-left: 50px;
+}
+
+ .form-title {
+   font-weight: 500;
+   padding-bottom: 15px;
+ }
+
+ #first-text {
+    font-weight: 600;
+ }
+
+button {
+   width: 250px;
+   margin: 50px 50px 30px 50px;
+   padding: 10px;
+   font-size: 20px;
+   font-weight: 600;
+   border: solid 2px #fcbe5a;
+   background-color: black;
+   border-radius: 2%;
+   color: #f8bc5a;
+}
+
+button:hover {
+   cursor: pointer;
+   color: black;
+   background-color: #fcbe5a;
+}
+
+ #get-started-text {
+    padding-bottom: 40px;
+ }
+
+ .intro-text p {
+    padding-bottom: 80px;
+ }
+
+ .log-in {
+   display: flex;
+   gap: 8px;
+   padding-left: 50px;
+   font-size: 18px;
+ }
+
+ .log-in a {
+   font-weight: 600;
+   color: #fcbe5a;
+   text-decoration: none;
+ }
+
+ .log-in a:hover {
+   cursor: pointer;
+   color: white;
+ }
