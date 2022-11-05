@@ -14,7 +14,7 @@
 }
 
 .image-container {
-    background: url(images/Mjölnir.jpg);
+    background: url(images/colourful_hallway.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
@@ -112,7 +112,7 @@
     font-weight: 600;
  }
 
-button {
+ .create-account-btn {
    width: 250px;
    margin: 50px 50px 30px 50px;
    padding: 10px;
@@ -124,7 +124,7 @@ button {
    color: #f8bc5a;
 }
 
-button:hover {
+.create-account-btn:hover {
    cursor: pointer;
    color: black;
    background-color: #fcbe5a;
@@ -154,4 +154,43 @@ button:hover {
  .log-in a:hover {
    cursor: pointer;
    color: white;
+ }
+
+
+
+ /* The message box is shown when the user clicks on the password field */
+#message {
+   display:none;
+   background: #202020;
+   color: #000;
+   position: relative;
+   padding: 20px;
+   margin-top: 10px;
+ }
+ 
+ #message p {
+   padding: 10px 35px;
+   font-size: 18px;
+ }
+ 
+ /* Add a green text color and a checkmark when the requirements are right */
+ .valid {
+   color: green;
+ }
+ 
+ .valid:before {
+   position: relative;
+   left: -35px;
+   content: "&#10004;";
+ }
+ 
+ /* Add a red text color and an "x" icon when the requirements are wrong */
+ .invalid {
+   color: red;
+ }
+ 
+ .invalid:before {
+   position: relative;
+   left: -35px;
+   content: "&#10006;";
  }
