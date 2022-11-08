@@ -1,3 +1,6 @@
+// password //
+// https://www.w3schools.com/howto/howto_js_password_validation.asp
+
 var myInput = document.getElementById("password");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -60,6 +63,7 @@ myInput.onkeyup = function() {
 
 
 // Confirm Password //
+// https://www.geeksforgeeks.org/how-to-validate-confirm-password-using-javascript/ 
 
 function validate_password() {
  

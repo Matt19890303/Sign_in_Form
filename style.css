@@ -5,7 +5,7 @@
     --txt: rgb(185, 185, 185)
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -13,18 +13,20 @@
     color: var(--txt);
 }
 
+.main_page {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100vh;
+}
+
 .image-container {
-    background: url(images/colourful_hallway.jpg);
+    background-image: url(images/colourful_hallway.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     width: 40%;
-    position: absolute;
-    left: 0px;
-    height: 100%;
  }
 
 /* Banner over image */
-
  /* Position text in the middle of the page/image */
  .banner {
    /* Fallback color */
@@ -32,8 +34,7 @@
    /* Black w/opacity/see-through */
    background-color: rgba(0,0,0, 0.4); 
    font-weight: bold;
-   /* border: 3px solid #f1f1f1; */
-   position: absolute;
+   position: relative;
    top: 30%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -63,35 +64,27 @@
  
  .form-container {
     width: 60%;
-    position: absolute;
-    right: 0px;
-    height: 100%;
-    background-color: black;
+    background-color: #000000;
+    display: flex;
+    flex-flow: column nowrap;
  }
 
  .inner-container {
-    /* border: solid red; */
     align-items: center;
     font-weight: 500;
     font-size: 1.2rem;
  } 
 
  .inner-container form {
-   background-color: rgb(12, 12, 12);
    padding: 50px;
    box-shadow: 0 10px 20px -6px #f8bc5a;
- }
-
- .user-input {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
  }
 
  input {
    width: 42%;
    margin: 5px 5px 5px 0;
    padding: 2px;
+   background-color: white;
    color: black;
    font-size: 16px;
    /* background-color: black; */
@@ -156,21 +149,19 @@
    color: white;
  }
 
-
-
  /* The message box is shown when the user clicks on the password field */
 #message {
    display:none;
    background: #202020;
    color: #000;
    position: relative;
-   padding: 20px;
+   padding: 5px;
    margin-top: 10px;
  }
  
  #message p {
    padding: 10px 35px;
-   font-size: 18px;
+   font-size: 15px;
  }
  
  /* Add a green text color and a checkmark when the requirements are right */
@@ -181,7 +172,6 @@
  .valid:before {
    position: relative;
    left: -35px;
-   content: "&#10004;";
  }
  
  /* Add a red text color and an "x" icon when the requirements are wrong */
@@ -192,5 +182,30 @@
  .invalid:before {
    position: relative;
    left: -35px;
-   content: "&#10006;";
  }
+
+
+ /* Responsive */
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 1300px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+ }  
+
+   input {
+      display: grid;
+      width: 50%;
+   }
+
+   .form-container {
+      width: 100%;
+   }
+
+}

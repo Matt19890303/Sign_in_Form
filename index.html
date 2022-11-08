@@ -40,7 +40,7 @@
             <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required onkeyup="validate_password()">
           </div>
-          
+
           <div id="wrong_pass_alert"></div>
 
         </form>
@@ -53,16 +53,11 @@
           <p id="length" class="invalid">Minimum <b>8 characters</b></p>
         </div>
 
-        <!-- <div class="create-account-btn"><button type="submit">Create Account</button></div> -->
         <button class="create-account-btn" type="submit" onclick="wrong_pass_alert()">Create Account</button>
-        <!-- <input class="create-account-btn" type = "submit" value = "Submit">   -->
         <div class="log-in"><p>Already have an account?</p><a href="#">Log in</a></div>
-      </div>
-      
+      </div>     
     </div>
-
   </div>
-  
-      
+
 </body>
 </html>
